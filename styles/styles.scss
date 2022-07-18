@@ -630,11 +630,13 @@ section {
 }
 /*Independed components*/
 .btn-con {
-  display: flex;
+  margin-top: 150px;
+  float: left;
   align-self: flex-start;
 }
 .btn-upwork {
-  display: flex;
+  margin-top: 150px;
+  float: right;
   align-self: flex-end;
 }
 .main-btn {

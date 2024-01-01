@@ -100,16 +100,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 0.3s ease-in-out;
-          animation: scaleAnim 0.3s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scaleAnim 0.3s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {

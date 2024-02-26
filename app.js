@@ -45,3 +45,28 @@ function PageTransitions() {
 }
 
 PageTransitions();
+
+// mobile menu
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const themeBtn = document.querySelector(".theme-btn");
+  const controls = document.querySelector(".controls");
+
+  hamburger.addEventListener("click", function () {
+    toggleMenu();
+  });
+
+  themeBtn.addEventListener("click", function () {
+    toggleMenu();
+  });
+
+  controls.addEventListener("click", function () {
+    toggleMenu();
+  });
+
+  function toggleMenu() {
+    hamburger.classList.toggle("is-active");
+    themeBtn.classList.toggle("is-active");
+    controls.classList.toggle("is-active");
+  }
+});

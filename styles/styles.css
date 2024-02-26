@@ -193,7 +193,7 @@ section {
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(0 0, 35% 0, 80% 100%, 0% 100%);
-  clip-path: polygon(0 0, 35% 0, 80% 100%, 0% 100%);
+          clip-path: polygon(0 0, 35% 0, 80% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -207,7 +207,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img:hover {
@@ -265,33 +265,17 @@ section {
   display: flex;
   align-items: center;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .prog-text {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey-2);
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
   height: 0.45rem;
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  span {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -300,76 +284,28 @@ section {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .Front-end {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .Front-end {
   width: 90%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .DevOps {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .DevOps {
   width: 85%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .backend {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .backend {
   width: 75%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .Laravel {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .Laravel {
   width: 70%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .django {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .django {
   width: 77%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .python {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 70%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .Workspace {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .Workspace {
   width: 90%;
 }
-.about-container
-  .about-stats
-  .progress-bars
-  .progress-bar
-  .progress-con
-  .progress
-  .DNS {
+.about-container .about-stats .progress-bars .progress-bar .progress-con .progress .DNS {
   width: 95%;
 }
 .about-container .right-about {
@@ -500,7 +436,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -585,7 +521,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   filter: grayscale(100%);
@@ -784,168 +720,4 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 6.3rem;
-} /*# sourceMappingURL=styles.css.map */
-
-/* Styles for screens smaller than 600px */
-
-/* Hamburger styles */
-.hamburger {
-  display: none;
-}
-
-.hamburger .line {
-  width: 30px;
-  height: 3px;
-  background-color: var(--color-grey-2);
-  margin: 5px;
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-
-/* Styles for "X" appearance */
-.hamburger.is-active .line:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.is-active .line:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.is-active .line:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-@media only screen and (max-width: 600px) {
-  :root {
-    --br-sm-2: 8px;
-  }
-
-  body {
-    font-size: 1rem;
-  }
-
-  header {
-    min-height: 50vh;
-  }
-
-  section {
-    padding: 1rem;
-  }
-
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
-    cursor: pointer;
-  }
-
-  /* Active class for theme button and controls */
-  .theme-btn.is-active,
-  .controls.is-active {
-    display: flex;
-    right: 5%;
-    top: 5rem;
-  }
-  .controls.is-active {
-    top: 25rem;
-  }
-
-  .theme-btn,
-  .controls {
-    display: none;
-  }
-
-  .header-content {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .header-content .left-header .h-shape {
-    width: 50%;
-  }
-
-  .header-content .left-header .image {
-    width: 100%;
-    margin-left: 1rem;
-  }
-
-  .header-content .right-header {
-    width: 100%;
-    padding-right: 1rem;
-    padding: 1rem;
-  }
-
-  .btn-upwork {
-    margin-top: 2rem;
-    float: right;
-    align-self: flex-end;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
-  }
-
-  .about-container .about-stats {
-    padding-right: 1rem;
-  }
-
-  .about-container .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-
-  .about-container .right-about {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-
-  .timeline {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .port-text {
-    margin: 1rem auto;
-  }
-
-  .portfolios,
-  .blogs {
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
-
-  .contact-content-con {
-    flex-direction: column;
-  }
-
-  .contact-content-con .left-contact,
-  .contact-content-con .right-contact {
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .contact-content-con .right-contact {
-    margin-top: 1rem;
-  }
-
-  .contact-content-con .right-contact .contact-icon {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .main-btn .btn-text {
-    padding: 0 1rem;
-  }
-
-  .main-title h2 {
-    font-size: 3rem;
-  }
-
-  .main-title h2 .bg-text {
-    font-size: 4rem;
-  }
-}
+}/*# sourceMappingURL=styles.css.map */
